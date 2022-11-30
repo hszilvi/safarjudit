@@ -1,0 +1,106 @@
+.self-main {
+    display: flex;
+        flex-direction: column;
+        margin-top: 6rem;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        margin-bottom: 2rem;
+        @media (min-width: $breakpoint-mobile) {
+            margin-bottom: 2rem;
+        }
+        @media (min-width: $breakpoint-tablet) {
+            flex-direction: row;
+            width: 90%;
+            margin-bottom: 4rem;            
+        }
+        .photo-wrapper {
+            @media (min-width: $breakpoint-tablet) {
+                width: 50%;
+                border-top: 2px solid $basic-blue;
+                padding-top: 2rem;
+            }
+            .photo {
+                border-radius: 50%;
+                overflow: hidden;
+                width: 290px;
+                height: 290px;
+                margin-top: 1rem;
+                margin-left: auto;
+                margin-right: auto;               
+                .judit {
+                    overflow: hidden;
+                    width: 290px;
+                    @media (min-width: $breakpoint-tablet) {
+                        width: 320px;
+                    }
+                }
+                @media (min-width: $breakpoint-tablet) {
+                    width: 320px;
+                    height: 320px;
+                }
+            }
+        }
+        .self-introtext {
+            padding: 0 2rem;
+            h3 {
+                font-size: 1.2rem;
+                color: $font-gray;
+                font-weight: 700;
+                text-align: right;
+                margin-top: 0;
+            }
+            p {
+                font-size: 1rem;
+                color: $font-gray;
+                line-height: 1.5rem;   
+            }
+            @media (min-width: $breakpoint-tablet) {
+                width: 50%;
+                padding-top: 2.5rem;
+                padding-left: 1rem;
+            }
+        }
+}
+.resume-wrapper {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    color: $font-gray;
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+    h1 {
+        font-size: 1.5rem;
+    }
+    h3 {
+        font-size: 1.2;
+        color: $dark-blue;
+    }
+    .studies-list {
+        list-style-type: none;
+        padding: 0;
+        .studies-list-row {
+            display: flex;
+            flex-direction: column;
+            @media (min-width: $breakpoint-mobile) {
+                flex-direction: row;
+                gap: 2rem;
+            }
+            .date {
+                color: $red;
+                font-size: .8rem;
+                @media (min-width: $breakpoint-mobile) {
+                    padding-top: 1rem;
+                    min-width: 20%;
+                }
+                @media (min-width: $breakpoint-tablet) {
+                    min-width: 15%;
+                }
+            }         
+            .info {
+                text-align: left;
+            }
+        }
+    }
+}

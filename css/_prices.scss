@@ -1,0 +1,70 @@
+.prices-main {
+    margin-top: 8rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    width: 90%;
+    color: $font-gray;
+    line-height: 1.5rem;
+    .prices-title {
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;  
+        .icon-wrapper-price {
+            position: relative;            
+            width: 40px;
+            height: 40px;
+            .price-dot {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: $green;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+            }           
+        }
+            .price-icon {
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                top: .5rem;
+                left: .3rem;
+                display: flex;
+                justify-content: center;
+                z-index: -1;
+                img {
+                    width: 90%;
+                    height: 90%;
+                }
+            }
+            h1 {
+        
+                font-size: 1.5rem;
+                line-height: 1.5rem;
+                margin-left: 1rem;              
+            }
+    } 
+    .price-content {       
+        .price {
+            display: flex;
+            flex-direction: column;
+            @media (min-width: $breakpoint-tablet) {
+                max-width: 850px;
+            }
+            .title {
+                margin-bottom: 0;
+            }
+            .money {
+                margin-left: 1rem;
+                color: $red;
+                text-align: right;
+                margin-top: 0;
+            }
+        }
+    }    
+}
+   

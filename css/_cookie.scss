@@ -1,0 +1,41 @@
+.cookie {
+    display: block;
+    width: 100%;
+    background-color: $red;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: white;
+    position: sticky;
+    bottom: 100px;
+    .cookie-subcontainer {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        .cookies {
+            p {
+                font-size: .75rem;
+                line-height: 1.5rem;
+                a {
+                    color: white;
+                    font-weight: 700;
+                }
+            }
+            #cookie-btn {
+                width: 100px;
+                height: 30px;
+                font-weight: 700;
+                cursor: pointer;
+                border: none;
+                border-radius: 20px;
+                background-color: white;
+                color: $red;
+                &:hover {
+                    background-color: $red;
+                    color: white;
+                    border: 1px solid white;
+                }
+
+            }
+        }
+    }
+}

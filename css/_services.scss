@@ -1,0 +1,77 @@
+.services-main {
+    margin-top: 6rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    width: 90%;
+    color: $font-gray;
+    line-height: 1.5rem;
+    h1 {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        margin-top: 2rem;
+    }   
+    .services-content {
+        .services-title {
+            margin-bottom: 1rem;
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: row;
+            align-items: center;  
+            .icon-wrapper {
+                position: relative;
+                width: 40px;
+                height: 40px;
+                .services-dot, .services-dot2 {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    background-color: $red;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: -1;
+                }
+                .services-dot2 {
+                    background-color: $green;
+                }
+                .services-icon {
+                    position: absolute;
+                    width: 40px;
+                    height: 40px;
+                    top: 2px;
+                    left: 0;
+                    display: flex;
+                    justify-content: center;
+                    z-index: -1;
+                    img {
+                        width: 80%;
+                        height: 80%;
+                    }    
+                }    
+            } 
+            h3 {
+                margin-left: .5rem;
+                padding-left: .5rem;
+            }       
+        }
+        p {
+            padding-left: 1rem;
+            margin-bottom: 2rem;
+        }
+        .highlighted-v1 {
+            color: $dark-blue;
+            font-weight: 400;
+        }
+        .highlighted-v2 {
+            color: $red;
+            font-weight: 700;
+        }
+        .highlighted-v3 {
+            font-weight: 600;
+        }
+    }
+    @media (min-width: $breakpoint-tablet) {
+        margin-top: 7rem;
+    }
+}
