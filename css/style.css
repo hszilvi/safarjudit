@@ -717,7 +717,7 @@ html {
 }
 
 .cookie {
-  display: block;
+  display: none;
   width: 100%;
   background-color: #F35555;
   padding-top: 1rem;

@@ -1,4 +1,3 @@
-console.log('form check works');
 const submitBtn = document.querySelector('#form-submit-button');
 
 submitBtn.addEventListener('click', e => {
@@ -7,7 +6,6 @@ submitBtn.addEventListener('click', e => {
 });
 
 const validateInputs = () => {
-    console.log('validate event works');
     const nameValue = document.querySelector('#name');
     const emailValue = document.querySelector('#email');
     const noteValue = document.querySelector('#note');

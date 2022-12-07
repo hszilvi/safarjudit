@@ -17,6 +17,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Magánrendelés XII. kerület, Schwartzer Ferenc utca 3.">
+    
+    <meta name="keywords" content="Safar Judit, gyerekpszichologus, klinikai szakpszichologus, ifjusagi pszichologus">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
+    <meta name="revisit-after" content="3 days">
+    
     <title>Sáfár Judit - gyermek- és ifjúsági szakpszichológus</title>
     <link href="https://www.safarjudit.com" rel="canonical">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -174,13 +180,13 @@
             <a href="https://www.linkedin.com/in/judit-s%C3%A1f%C3%A1r-75134146/" target="_blank"><img src="img/linkedinlogo.png" alt="linkedinlogo"></a>           
         </div>
         <div class="pernum">Működési engedély száma: 2537</div>
-        <div class="gdprlink"><a href="public/gdpr.html">Adatkezelési szabályzat</a></div>
+        <div class="gdprlink"><a href="gdpr.html">Adatkezelési szabályzat</a></div>
     </div>
     <div class="cookie">
         <div class="cookie-container">
             <div class="cookie-subcontainer">
                 <div class="cookies">
-                    <p>Ez az oldal cookie-kat (sütiket) használ, amelyet az ön gépén tárol. A cookie-k személyek azonosítására nem alkalmasak, az oldal könnyebb használatát szolgálják. Az oldal használatával Ön beleegyezik a cookie-k használatában. További információért olvassa el az <a href="/public/gdpr.html" rel="nofollow">Adatvédelmi szabályzatot.</a></p>
+                    <p>Ez az oldal cookie-kat (sütiket) használ, amelyet az ön gépén tárol. A cookie-k személyek azonosítására nem alkalmasak, az oldal könnyebb használatát szolgálják. Az oldal használatával Ön beleegyezik a cookie-k használatában. További információért olvassa el az <a href="gdpr.html" rel="nofollow">Adatvédelmi szabályzatot.</a></p>
                     <button id="cookie-btn">Elfogadom</button>
                 </div>
             </div>
@@ -205,12 +211,28 @@
             date.setTime(date.getTime() +(expdays * 24 * 60 * 60 * 1000));
             const expires = "expires=" + date.toUTCString();
             document.cookie = cName + "=" + cValue + ";" + expires + "; path=/";
+
+        }
+        getCookie = (cName) => {
+            const name = cName + "=";
+            const cDecoded = decodeURIComponent(document.cookie);
+            const cArr = cDecoded.split("; ");
+            let value;
+            cArr.forEach(val => {
+                if(val.indexOf(name) === 0) value = val.substring(name.length);
+            })
+            return value;
         }
         cookieSubmitBtn.addEventListener('click', () => {
             cookieBanner.style.display = 'none';
             setCookie('cookie', true, 30);
             console.log(setCookie);
         })
+        cookieMessage = () => {
+            if(!getCookie('cookie'))
+            cookieBanner.style.display = 'block';
+        }
+        window.addEventListener('load', cookieMessage);
     </script>
     <script src="js/index.js"></script>
     <script src="js/contact.js"></script>
