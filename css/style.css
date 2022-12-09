@@ -937,13 +937,8 @@ html {
 
 .contact-wrapper {
   background-color: #A4CEF3;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   color: white;
   font-size: 1rem;
   margin-left: auto;
@@ -978,169 +973,8 @@ html {
   color: #F35555;
 }
 
-@media (min-width: 769px) {
-  .contact-wrapper .contact-data {
-    width: 50%;
-    margin-left: 5%;
-  }
-}
-
-@media (min-width: 769px) {
-  .contact-wrapper {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-}
-
-.contact-wrapper .contact-form-wrapper {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media (min-width: 769px) {
-  .contact-wrapper .contact-form-wrapper {
-    width: 50%;
-    margin-right: 5%;
-  }
-}
-
-.contact-wrapper .contact-form-wrapper .form-container {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 2rem;
-}
-
-.contact-wrapper .contact-form-wrapper .form-container .contact-form {
-  width: 100%;
-  padding-left: -1rem;
-  padding: 0;
-}
-
-.contact-wrapper .contact-form-wrapper .form-container .contact-form .error {
-  color: #F35555;
-  opacity: 95%;
-  font-size: .6rem;
-  visibility: hidden;
-}
-
-.contact-wrapper .contact-form-wrapper .form-container .contact-form input {
-  width: 100%;
-  background: transparent;
-  border: none;
-  border-bottom: 2px solid white;
-  padding-top: 1.5rem;
-  padding-bottom: .5rem;
-  color: white;
-  cursor: pointer;
-}
-
-.contact-wrapper .contact-form-wrapper .form-container .contact-form .gdpr-checkbox {
-  font-size: .75rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  gap: .5rem;
-  margin-top: .5rem;
-  cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-
-.contact-wrapper .contact-form-wrapper .form-container .contact-form .gdpr-checkbox #gdpr-check {
-  width: .8rem;
-}
-
-.contact-wrapper .contact-form-wrapper .form-container .contact-form .gdpr-checkbox #gdpr-check:hover {
-  background-color: #F35555;
-}
-
-.contact-wrapper .contact-form-wrapper .form-container .contact-form .gdpr-checkbox input[type="checkbox"]:hover {
-  background-color: red;
-}
-
-.contact-wrapper .contact-form-wrapper .form-container .contact-form .gdpr-checkbox2 {
-  border: 2px solid red;
-}
-
-.contact-wrapper .contact-form-wrapper .form-container .contact-form .gdpr-checkbox2 .gdpr-label {
-  position: relative;
-  cursor: pointer;
-  font-size: .75rem;
-}
-
-.contact-wrapper .contact-form-wrapper .form-container .contact-form .gdpr-checkbox2 .gdpr-label input[type=checkbox] {
-  position: absolute;
-  top: .2rem;
-  opacity: 0;
-}
-
-.contact-wrapper .contact-form-wrapper .form-container .contact-form .gdpr-checkbox2 .gdpr-label input[type=checkbox] + b {
-  position: relative;
-  display: inline-block;
-  background-color: white;
-  border: 1px solid #EEB5B5;
-  border-radius: 2px;
-  cursor: pointer;
-  vertical-align: bottom;
-  text-align: center;
-  outline: 0;
-  width: .8rem;
-  height: .8rem;
-  margin-right: .3rem;
-}
-
-.contact-wrapper .contact-form-wrapper .form-container .contact-form .gdpr-checkbox2 .gdpr-label input[type=checkbox] + b:hover {
-  background-color: #0094FF;
-}
-
-.contact-wrapper .contact-form-wrapper .form-container .contact-form .gdpr-checkbox2 .gdpr-label input[type=checkbox] + b:hover:after {
-  color: white;
-  content: '\2714';
-}
-
-.contact-wrapper .contact-form-wrapper .form-container .contact-form .gdpr-checkbox2 .gdpr-label input[type=checkbox] + b + span {
-  vertical-align: bottom;
-  padding-top: -.2rem;
-}
-
-.contact-wrapper .contact-form-wrapper .form-container .contact-form p {
-  font-size: .75rem;
-}
-
-.contact-wrapper .contact-form-wrapper .form-container .contact-form #form-submit-button {
-  float: right;
-  width: 100px;
-  height: 30px;
-  background-color: white;
-  color: #A4CEF3;
-  font-size: .75rem;
-  font-weight: 700;
-  margin-bottom: 2rem;
-  cursor: pointer;
-  border: none;
-  border-radius: 20px;
-}
-
-.contact-wrapper .contact-form-wrapper .form-container .contact-form #form-submit-button:hover {
-  background-color: #F35555;
-  color: white;
-}
-
 .footer {
+  margin-top: 2rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -1156,6 +990,7 @@ html {
   margin-right: auto;
   color: #0094FF;
   font-size: .8rem;
+  background-color: none;
 }
 
 @media (min-width: 769px) {
